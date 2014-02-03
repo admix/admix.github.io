@@ -1,0 +1,378 @@
+body{
+	margin: auto;
+	margin-top: 5px;
+	min-width: 1024px;
+	color: #bbbbbb;
+	text-align: justify;
+	line-height: 120%;
+	word-spacing: 2px;
+}
+nav{  								/* Layout Part */
+    width: 984px;
+    height: 25px; 
+    background: #777777;
+    border-radius: 20px;
+    border: 2px solid #003399;  
+ 	font-size: 14px;
+ 	margin: auto;
+ 	padding-top: 10px;
+}
+nav ul{
+	list-style-type: none;
+	width:100%;
+	margin: auto;
+}
+nav ul li{
+	margin-left: auto;
+	margin-right: auto;
+}
+nav a{
+	margin-right: 5px;
+	color: #003399;
+	padding-left: 30px;
+	margin:auto;
+}
+nav a:hover{
+	color: #ff3300;
+}
+.img{
+	margin: auto;
+	width: 26px;
+	height: 26px;
+	vertical-align: top;
+	padding-right: 10px;
+	padding-left: 30px;
+}
+.start{
+	display: table;
+	width: 984px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	margin:auto;
+	font-size: 16px;
+	text-align: left;
+}
+p{
+	margin: auto;
+	margin-top: 15px;
+	
+}
+span{
+	text-align: center;
+	margin: auto;
+}
+h2{
+	font-size: 18px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-decoration: underline;
+}
+.lay{
+	display: table;
+	width: 984px;
+	margin: auto;
+}
+.main{
+	display: table-cell;
+	margin: auto;
+	width: 600px;
+	padding-right: 20px;
+	padding-top: 20px;
+}
+section{
+	margin-bottom: 10px;
+}
+.content{
+	margin: auto;
+	margin-top: 15px;
+	font-size: 14px;
+}
+.content:first-letter{
+	font-size: xx-large;
+	font-weight: bold;
+	padding-left: 10px;
+	text-transform: uppercase;
+}
+aside{
+	display: table-cell;
+	width: 350px;
+	background-image: url("../images/illusion.png");
+	margin: auto;
+	border: 1px solid;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	border-radius: 10px;
+	border-bottom: none;
+	border-right: none;
+	position: fixed;
+}
+aside ul ul{
+	list-style-image: url("../images/arrow.png");
+	padding-left: 20px;
+	list-style-position: inside;
+}	
+aside ul li{
+	padding-top: 10px;
+	color: #ff3300;
+}
+li a{
+	color: #006699;
+}
+li a:hover{
+	color: #ff3300;
+}
+footer{
+	width: 984px;
+	height: 20px;
+	text-align: center;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	}	
+hr{
+	margin-top: 20px;
+}					
+
+	/* End of Layout Part */
+
+							/* Photo Gallery */
+aside ul.arrow{
+	list-style-image: url("../images/arrow.png");
+	padding-left: 20px;
+	padding-top: 10px;
+	list-style-position: inside;
+}
+.country{
+	display: table;
+	width: 600px;
+	margin: auto;
+}
+.descr{
+	display: table-cell;
+	width: 300px;
+	margin: auto;
+	padding-right: 5px;
+	vertical-align: top;
+	font-size: 13px;
+}
+.content a{
+	color: #ff0000;
+}
+.content a:hover{
+	color: #3366ff;
+}
+.pic{
+	display: table-cell;
+	width: 140px;
+	margin: auto;
+	text-align: right;
+	padding-top: 65px;
+	padding-right: 5px;
+	padding-left: 3px;
+}
+figure{
+	margin: auto;
+	text-align: center;
+}
+.pic figcaption{
+	width: 140px;
+   	padding: 5px;
+    margin:  5px;
+    margin-left: 40px;
+    font-size: 18px;
+    font-weight: 700;
+    border: 2px solid;
+    word-wrap:normal;
+    text-align:center;
+}
+
+							/* Video */
+aside input{
+	text-align: center;
+	margin: auto;
+	width: 120px;
+	background-color: #ffdd33;
+	font-size: 12px;
+	line-height: 20px;
+	margin-bottom: 10px;
+}
+aside p{
+	line-height: 40px;
+}
+video{
+	width: 300px;
+	margin-top: 15px;
+}
+.vid{
+	display: table-cell;
+	width: 290px;
+	margin: auto;
+	/*padding-top: 30px;
+	padding-right: 5px;
+	padding-left: 3px;*/
+}
+.vid figcaption{
+	width: 200px;
+    padding: 5px;
+    margin:  5px;
+    margin-left: 40px;
+    font-size: 18px;
+    font-weight: 700;
+    border: 2px solid;
+    word-wrap:normal;
+    text-align:center;
+}
+							/* Audio */
+audio{
+	width: 300px;
+	margin-top: 10px;
+}
+.aud{
+	display: table-cell;
+	width: 140px;
+	margin: auto;
+	padding-top: 70px;
+	padding-right: 5px;
+	padding-left: 15px;
+}
+.aud figcaption{
+	width: 180px;
+    padding: 5px;
+    margin:  5px;
+    margin-left: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    border: 2px solid;
+    word-wrap:normal;
+    text-align:center;
+}
+							/* HTML5 */
+mark{
+	margin-left: 3px;
+	padding: 2px;
+}
+							/* Forms */
+.form{
+	display: table;
+	width: 900px;
+	
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 60px;
+	border: 1px solid #ffffff;
+	border-radius: 20px;
+	padding:10px;
+}
+.name{
+	display: table-cell;
+	width: 80px;
+}
+.left{   /* Left forms */
+	display: table-cell;
+	width: 400px;
+	border: 1px solid #ffffff;
+	border-radius: 20px;
+	margin: auto;
+	margin-right: 5px;
+	border-bottom: none;
+	border-right: none;
+	padding: 10px;
+}
+.center{
+	text-align: left;
+	padding-left: 5px;
+}
+label{
+	display: block;
+	float: left;
+	line-height: 14px;
+	width:100px;
+	margin-bottom: 1px;
+}
+.right{   /* Right forms */
+	display: table-cell;
+	width: 400px;
+	border: 1px solid #ffffff;
+	border-radius: 20px;
+	margin: auto;
+	margin-left: 5px;
+	border-bottom: none;
+	border-left: none;
+	padding: 10px;
+}
+.form table{
+	border: 1px solid #ffffff;
+	border-collapse: collapse;
+	width:100px;
+	text-align: center;
+	font-size: 12px;
+	margin: auto;
+
+}
+tr{
+	border: 1px solid #ffffff;
+}
+td{
+	border: 1px solid #ffffff;
+}
+
+
+.leg{    
+	border: 1px solid #003399;
+    background-color: #ffdd33;
+    border-radius: 5px;
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left:1px;
+    padding:2px;
+    text-align: left;
+}
+
+fieldset{
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    border-style: outset;
+    padding-left:5px;
+    padding-bottom: 0px;
+    margin:5px;
+}
+.name p{   /* Mama'z pizza part */
+	text-align: center;
+}
+.left p{   /* Personal info etc... */
+	
+}
+.right p{  /* Choose Toppings field */
+	margin-left: 2px;
+	text-align: left;
+}
+.small{
+	display: table-cell;
+	width: 150px;
+	margin: auto;
+	border: 2px solid #ffffff;
+	border-radius: 10px;
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+	padding-left: 10px;
+}
+.ce{
+	margin: auto;
+	width: 300px;
+}
+.empty{  /* Part fro JS */
+	display: table-cell;
+	width: 400px;
+	margin: auto;
+	height: 290px;
+	margin: 5px;
+	border: 1px solid #ffffff;
+}
+							/* Other Page */
+
+/*span a:visited{ to change link color after it has been opened 
+	color: #000000;
+}
+*/

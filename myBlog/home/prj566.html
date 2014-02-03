@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>admixDev</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/lighter.js" type="text/javascript"></script>
+    <script src="../js/home.js" type="text/javascript"></script>
+    <!--<link rel="stylesheet" href="../css/reset.css" type="text/css" media="screen" />-->
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
+    <link rel="stylesheet" href="../css/grumpy.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../css/index.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../css/responsive.css" type="text/css" media="screen" />
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
+    <script src="../js/jquery/jquery-2.0.3.min.js" type="text/javascript"></script>
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
+    <!--<link type="text/css" rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-2.3.2.css">-->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAI46ehbSylecaihH9PK4Wmv0bTI5cJs6s&sensor=true"></script>
+    <script>
+      var map;
+      var myLatlng = new google.maps.LatLng(43.58821,-79.64172);
+      var marker;
+
+      function initialize () {
+        // body...
+        var mapOptions = {
+          zoom: 7,
+          panControl: true,
+          zoomControl: true,
+          zoomControlOptions: {
+            style: google.maps.ZoomControlStyle.LARGE
+          },
+          scaleControl: true,
+          mapTypeCOntrol: true,
+          streetViewControl: true,
+          overviewMapControl: true
+        };
+        map = new google.maps.Map(document.getElementById('map-canvas'),mapOptions);
+
+        marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          draggable: true,
+          animation: google.maps.Animation.DROP,
+          title: "My marker!"
+        });
+        google.maps.event.addListener(marker, 'click', toggleBounce);
+
+        //HTML Geolocation
+        if(navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function (position) {
+            // body...
+            var pos = new google.maps.LatLng(position.coords.latitude,
+                                             position.coords.longitude); //current position
+
+            var infowindow = new google.maps.InfoWindow({
+              map: map,
+              position: pos,
+              content: "Your Current Location."
+            });
+
+            map.setCenter(pos); //setting centered according to position
+          }, function() {
+            handleNoGeolocation(true);
+          });
+        } else{
+          //If browser doesn't support geolocation
+          handleNoGeolocation(false);
+        }
+      }
+
+      function toggleBounce() {
+        if (marker.getAnimation() != null) {
+          marker.setAnimation(null);
+        } else {
+          marker.setAnimation(google.maps.Animation.BOUNCE);
+        }
+      }
+
+
+      function handleNoGeolocation (errorFlag) {
+        // body...
+        if(errorFlag) {
+          var content = "Error: Geolocation service failed."; 
+        }else {
+          var content = "Error: Your Browser doesn't support geolocation.";
+        }
+
+        var options = {
+          map: map,
+          position: new google.maps.LatLng(60, 105),
+          content: content
+        };
+
+        var infowindow = new google.maps.InfoWindow(options);
+        map.setCenter(options.position);
+      }
+
+      google.maps.event.addDomListener(window, 'load', initialize);
+      /*
+      function initialize() {
+        var mapOptions = {
+          zoom: 4,
+          center: new google.maps.LatLng(43.70, 79.40)
+        };
+
+        var map = new google.maps.Map(document.getElementById('map-canvas'),
+            mapOptions);
+      }
+
+      function loadScript() {
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAI46ehbSylecaihH9PK4Wmv0bTI5cJs6s&sensor=true&region=CA&' +
+            'callback=initialize';
+        document.body.appendChild(script);
+      }
+
+      window.onload = loadScript;
+      */
+    </script>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="index.html">admix<span class="logo">dev</span></a>
+          <div class="nav-collapse collapse index_p">
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li id="prj"><a href="prj566.html">PRJ566</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="../../Games/index.html">Games</a></li>
+              <li><a href="../../PizzaProject/index.html">PizzaProject</a></li>
+              <li><a href="http://admix-node.herokuapp.com">Heroku App</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+  </div>
+  <!-- We use row-fluid inside containers to achieve a resizable layout. -->  
+    <div class="container">
+      <div class="index_p row-fluid">
+        <h1>"Event Feed" project<span id="txt"></span></h1>
+      </div>
+    <div class="row-fluid section1">
+      <div class="span10 offset1 copy copy-right contact_p">
+        <p>
+          <span>Short Description:</span><br><br>
+
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspEvent Feeds is a crowdsourced web application that allows users to find worldwide and local events happening in the future. Events will be shown on a map with the users location and will be filtered to the users desire in order to find exactly what they are looking for. Events may be public, private, free or require an entrance fee that you can pay online using this app.Events will have a short description explaining purpose, mapped location, company hosted, genre and possibly pictures (from previous events if the event is going on regular basis), guest list, price and directions to the Event. Past events can be rated (eg star rating) by event attendees.  Past events will have optional links to pictures of the event uploaded to instagram and links to videos of the event on youtube.  
+                <br><br>
+                <span>Scope:</span>
+                <br> 
+                <ul>
+                  <li>Create events for the general public or a select group of people</li><br>
+                  <li>Send invitations to family and friends</li><br>
+                  <li>View event descriptions and location, including maps and directions</li><br>
+                  <li>Find and register for events that are taking place locally and worldwide</li><br>
+                  <li>Add events to your calendar and stay updated with event notifications/reminders</li><br>
+                  <li>Promote your event through a crowd sourced environment</li><br>
+                  <li>Rate past events and provide feedback for host</li><br>
+                  <li>Share your events on facebook and twitter to attract your friends to the event</li><br>
+                  <li>Discover popular and recommended events happening on your location</li><br>
+                  <li>View comments and see pictures from previous events</li><br>
+                  <br>
+                </ul>
+                <span>Example -></span> <a href="http://www.webmaker.org/en-US/events">Event Feed by Mozilla</a>
+        </p>
+        <div style="height:200px;width:100%;margin:0px;padding:0px;"id="map-canvas"></div>
+      </div>
+    </div>    
+    <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
+    <!-- http://creativecommons.org/licenses/ -->
+    <div class="footer row-fluid">
+        <div class="index_p">
+            <script>admixdev();</script>
+      </div>
+      <div class="span8 offset2 social">
+          <!-- Social buttons are not included in default Bootstrap. -->
+          <button class="btn btn-twitter"><i class="icon-twitter"></i> <a href="http://www.twitter.com/admix_Snurnikov">| Twitter</a></button>
+          <button class="btn btn-linkedin"><i class="icon-linkedin"></i> <a href="http://ca.linkedin.com/in/alexandersnurnikov/">| LinkedIn</a></button>
+          <button class="btn btn-github"><i class="icon-github"></i> <a href="http://www.github.com/admix">| Github</a></button>
+        </div>
+
+    </div>
+    <br>
+  </div>
+</body>
+</html>
