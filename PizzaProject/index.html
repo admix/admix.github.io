@@ -242,13 +242,14 @@
     </div>
     <div class="footer row-fluid">
         <div class="index_p">
-            <script>admixdev();</script>
+            <div class="span9 offset1 social">
+              <script>admixdev();</script>
+              <!-- Social buttons are not included in default Bootstrap. -->
+              <script type="text/javascript" src="../myBlog/js/social.js"></script>
+              <script>social();</script>
+            </div>
       </div>
-      <div class="span8 offset2 social">
-          <!-- Social buttons are not included in default Bootstrap. -->
-          <script type="text/javascript" src="../myBlog/js/social.js"></script>
-          <script>social();</script>
-        </div>
+    </div>
     </div>
   </body>
 </html>
