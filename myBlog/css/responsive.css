@@ -76,7 +76,8 @@
         padding: 2.5% 0%;
       }
       .footer{
-        position:fixed;
+        padding-bottom: 5px;
+        position:fixed-bottom;
         bottom: 5px;
         color: #cccccc;
         text-align: center;
