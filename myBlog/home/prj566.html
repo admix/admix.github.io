@@ -123,6 +123,13 @@
       window.onload = loadScript;
       */
     </script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+      $(".nav li").removeClass("active");//this will remove the active class from  
+                                         //previously active menu item 
+      $('#prj').addClass('active');
+    });
+  </script>
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -134,12 +141,24 @@
           <a class="brand" href="index.html">admix<span class="logo">dev</span></a>
           <div class="nav-collapse collapse index_p">
             <ul class="nav">
-              <li><a href="index.html">Home</a></li>
+              <li id="home"><a href="index.html">Home</a></li>
               <li id="prj"><a href="prj566.html">PRJ566</a></li>
               <li><a href="contact.html">Contact</a></li>
-              <li><a href="../../Games/index.html">Games</a></li>
-              <li><a href="../../PizzaProject/index.html">PizzaProject</a></li>
-              <li><a href="http://admix-node.herokuapp.com">Heroku App</a></li>
+              <li><div class="dropdown">
+                    <button class="btn btn-info dropdown-toggle sr-only" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                      Projects
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="../../Games/index.html">Games</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="../../PizzaProject/index.html">Pizza Project</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="cplusplus.html">C++ App</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="mvc4.html">.NET MVC4 App</a></li>
+                      <li role="presentation" class="divider"></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="../../nodeApp/index.html">Heroku Apps</a></li>
+                    </ul>
+                  </div>
+              </li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -153,6 +172,7 @@
     <div class="row-fluid section1">
       <div class="span10 offset1 copy copy-right contact_p">
         <p>
+          <div style="height:200px;width:100%;margin:0px;padding:0px;"id="map-canvas"></div>
           <span>Short Description:</span><br><br>
 
                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspEvent Feeds is a crowdsourced web application that allows users to find worldwide and local events happening in the future. Events will be shown on a map with the users location and will be filtered to the users desire in order to find exactly what they are looking for. Events may be public, private, free or require an entrance fee that you can pay online using this app.Events will have a short description explaining purpose, mapped location, company hosted, genre and possibly pictures (from previous events if the event is going on regular basis), guest list, price and directions to the Event. Past events can be rated (eg star rating) by event attendees.  Past events will have optional links to pictures of the event uploaded to instagram and links to videos of the event on youtube.  
@@ -174,7 +194,6 @@
                 </ul>
                 <span>Example -></span> <a href="http://www.webmaker.org/en-US/events">Event Feed by Mozilla</a>
         </p>
-        <div style="height:200px;width:100%;margin:0px;padding:0px;"id="map-canvas"></div>
       </div>
     </div>    
     <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->

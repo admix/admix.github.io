@@ -28,6 +28,7 @@
       $('#home').addClass('active');
     });
   </script>
+
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -42,14 +43,27 @@
               <li id="home"><a href="index.html">Home</a></li>
               <li><a href="prj566.html">PRJ566</a></li>
               <li><a href="contact.html">Contact</a></li>
-              <li><a href="../../Games/index.html">Games</a></li>
-              <li><a href="../../PizzaProject/index.html">PizzaProject</a></li>
-              <li><a href="../../nodeApp/index.html">Heroku App</a></li>
+              <li><div class="dropdown">
+                    <button class="btn btn-info dropdown-toggle sr-only" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                      Projects
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="../../Games/index.html">Games</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="../../PizzaProject/index.html">Pizza Project</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="cplusplus.html">C++ App</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="mvc4.html">.NET MVC4 App</a></li>
+                      <li role="presentation" class="divider"></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="../../nodeApp/index.html">Heroku Apps</a></li>
+                    </ul>
+                  </div>
+              </li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
       </div>
   </div>
+
   <!-- We use row-fluid inside containers to achieve a resizable layout. -->  
     <div class="container">
       <div class="index_p row-fluid">

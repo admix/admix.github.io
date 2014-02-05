@@ -35,15 +35,27 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="../myBlog/home/index.html">admix<span class="logo">dev</span></a>
+          <a class="brand" href="index.html">admix<span class="logo">dev</span></a>
           <div class="nav-collapse collapse index_p">
             <ul class="nav">
-              <li class="active"><a href="../myBlog/home/index.html">Home</a></li>
+              <li id="home"><a href="../myBlog/home/index.html">Home</a></li>
               <li><a href="../myBlog/home/prj566.html">PRJ566</a></li>
               <li><a href="../myBlog/home/contact.html">Contact</a></li>
-              <li id="game"><a href="index.html">Games</a></li>
-              <li><a href="../PizzaProject/index.html">PizzaProject</a></li>
-              <li><a href="../nodeApp/index.html">Heroku App</a></li>
+              <li><div class="dropdown">
+                    <button class="btn btn-info dropdown-toggle sr-only" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                      Projects
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html">Games</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="../PizzaProject/index.html">Pizza Project</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="../myBlog/home/cplusplus.html">C++ App</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="../myBlog/home/mvc4.html">.NET MVC4 App</a></li>
+                      <li role="presentation" class="divider"></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="../nodeApp/index.html">Heroku Apps</a></li>
+                    </ul>
+                  </div>
+              </li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
