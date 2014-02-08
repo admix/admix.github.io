@@ -311,38 +311,38 @@ function McTabMenu(k) {
         };
     F();
     K(w);
-    var y = function (a) {
-        return a[f].id == d.b ? a : a[f][f][f] ? y(a[f][f]) : null
-    }, v = function (a) {
-            if (b && b.p) {
-                var d = a[m] == "A",
-                    c;
-                if (a[m] == "LI") c = a;
-                else if (d)
-                    if (a[f][m] == "LI") c = a[f];
-                if (c) b.a = y(c);
-                if (!c || !b.a) {
-                    alert("Improper link ID");
-                    return
-                }
-                clearTimeout(b.b);
-                b.m(j(b.p), b.a);
-                q(c)
-            } else setTimeout(function () {
-                v(a)
-            }, 4)
-        }, H = 0,
-        z = function (a) {
-            var b = c(s, a);
-            if (b) v(b);
-            else ++H < 50 && setTimeout(function () {
-                z(a)
-            }, 90)
-        };
-    return {
-        init: w,
-        select: function (li_id) {
-            z(li_id)
-        }
-    }
+    // var y = function (a) {
+    //     return a[f].id == d.b ? a : a[f][f][f] ? y(a[f][f]) : null
+    // }, v = function (a) {
+    //         if (b && b.p) {
+    //             var d = a[m] == "A",
+    //                 c;
+    //             if (a[m] == "LI") c = a;
+    //             else if (d)
+    //                 if (a[f][m] == "LI") c = a[f];
+    //             if (c) b.a = y(c);
+    //             if (!c || !b.a) {
+    //                 alert("Improper link ID");
+    //                 return
+    //             }
+    //             clearTimeout(b.b);
+    //             b.m(j(b.p), b.a);
+    //             q(c)
+    //         } else setTimeout(function () {
+    //             v(a)
+    //         }, 4)
+    //     }, H = 0,
+    //     z = function (a) {
+    //         var b = c(s, a);
+    //         if (b) v(b);
+    //         else ++H < 50 && setTimeout(function () {
+    //             z(a)
+    //         }, 90)
+    //     };
+    // return {
+    //     init: w,
+    //     select: function (li_id) {
+    //         z(li_id)
+    //     }
+    // }
 }
