@@ -3,9 +3,6 @@
     background-image: url("../images/stardust.png");
   }
   /* First row (div) */
-  iframe{
-
-  }
   .main1{    
     display: table;
     /*border: 2px solid #cc2200;*/
@@ -87,9 +84,9 @@
     background-image: url("../images/stardust.png");
   }
 
-  iframe{
-    width: 400px;
-    height: 300px; 
+  #map-canvas{
+    width: 80%;
+    height: 80%;
   }
   /* First row (div) */
   .main1{    
