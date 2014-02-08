@@ -6,28 +6,28 @@
   .main1{    
     display: table;
     /*border: 2px solid #cc2200;*/
-          font-size: 12px;
-          margin:auto;
+    font-size: 12px;
+    margin:auto;
   }
 
   .first{    
-      display: table-cell;
-          font-size: 12px;
-          padding-left:3px;
-          padding-bottom: 10px;
-          width:700px;
-          /*border-right:2px dashed #000000;*/
-          float: left;
-          margin-right: 20px;
+    display: table-cell;
+    font-size: 12px;
+    padding-left:3px;
+    padding-bottom: 10px;
+    width:700px;
+    /*border-right:2px dashed #000000;*/
+    float: left;
+    margin-right: 20px;
   }
   .second{
-      display: table-cell;
-          font-size: 12px;
-          padding-left:3px;
-          padding-bottom: 10px;
-          width:300px;
-          /*border-right:2px dashed #000000;*/
-          float: right;
+    display: table-cell;
+    font-size: 12px;
+    padding-left:3px;
+    padding-bottom: 10px;
+    width:300px;
+    /*border-right:2px dashed #000000;*/
+    float: right;
   }
 
   .container{
@@ -50,13 +50,13 @@
 
 
   #navigation {
-      float: left;
-      width: 120px;
+    float: left;
+    width: 120px;
   }
 
   #navigation2 {
-      float: right;
-      width: 200px;
+    float: right;
+    width: 200px;
   }
 
   #content {
@@ -83,37 +83,32 @@
    body{
     background-image: url("../images/stardust.png");
   }
-
-  #map-canvas{
-    width: 80%;
-    height: 80%;
-  }
   /* First row (div) */
   .main1{    
     display: table;
     /*border: 2px solid #cc2200;*/
-          font-size: 12px;
-          margin:auto;
+    font-size: 12px;
+    margin:auto;
   }
 
   .first{    
-      display: table-cell;
-          font-size: 12px;
-          padding-left:3px;
-          padding-bottom: 10px;
-          /*border-right:2px dashed #000000;*/
-          width:80%;
-          float: left;
-          margin-right: 20px;
+    display: table-cell;
+    font-size: 12px;
+    padding-left:3px;
+    padding-bottom: 10px;
+    /*border-right:2px dashed #000000;*/
+    width:80%;
+    float: left;
+    margin-right: 20px;
   }
   .second{
-      display: table-cell;
-          font-size: 12px;
-          padding-left:3px;
-          padding-bottom: 10px;
-          /*border-right:2px dashed #000000;*/
-          width: 80%;
-          float: right;
+    display: table-cell;
+    font-size: 12px;
+    padding-left:3px;
+    padding-bottom: 10px;
+    /*border-right:2px dashed #000000;*/
+    width: 80%;
+    float: right;
   }
 
 }
@@ -125,28 +120,28 @@ body{
   .main1{    
     display: table;
     /*border: 2px solid #cc2200;*/
-          font-size: 12px;
-          margin:auto;
+    font-size: 12px;
+    margin:auto;
   }
 
   .first{    
-      display: table-cell;
-          font-size: 12px;
-          padding-left:3px;
-          padding-bottom: 10px;
-          width:700px;
-          /*border-right:2px dashed #000000;*/
-          float: left;
-          margin-right: 20px;
+    display: table-cell;
+    font-size: 12px;
+    padding-left:3px;
+    padding-bottom: 10px;
+    width:700px;
+    /*border-right:2px dashed #000000;*/
+    float: left;
+    margin-right: 20px;
   }
   .second{
-      display: table-cell;
-          font-size: 12px;
-          padding-left:3px;
-          padding-bottom: 10px;
-          width:300px;
-          /*border-right:2px dashed #000000;*/
-          float: right;
+    display: table-cell;
+    font-size: 12px;
+    padding-left:3px;
+    padding-bottom: 10px;
+    width:300px;
+    /*border-right:2px dashed #000000;*/
+    float: right;
   }
 
   .container{
@@ -169,17 +164,17 @@ body{
 
 
   #navigation {
-      float: left;
-      width: 120px;
+    float: left;
+    width: 120px;
   }
 
   #navigation2 {
-      float: right;
-      width: 200px;
+    float: right;
+    width: 200px;
   }
 
   #content {
-      margin: auto;
+    margin: auto;
   }
 
   .map{
