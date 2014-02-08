@@ -1,78 +1,198 @@
-body{
-  width: 1024px;
-  background-image: url("../images/stardust.png");
-}
-/* First row (div) */
-.main1{    
-  display: table;
-  /*border: 2px solid #cc2200;*/
-        font-size: 12px;
-        margin:auto;
-}
+@media (min-width: 980px) {
+    body{
+    background-image: url("../images/stardust.png");
+  }
+  /* First row (div) */
+  iframe{
 
-.first{    
-    display: table-cell;
-        font-size: 12px;
-        padding-left:3px;
-        padding-bottom: 10px;
-        width:700px;
-        /*border-right:2px dashed #000000;*/
-        float: left;
-        margin-right: 20px;
-}
-.second{
-    display: table-cell;
-        font-size: 12px;
-        padding-left:3px;
-        padding-bottom: 10px;
-        width:300px;
-        /*border-right:2px dashed #000000;*/
-        float: right;
-}
+  }
+  .main1{    
+    display: table;
+    /*border: 2px solid #cc2200;*/
+          font-size: 12px;
+          margin:auto;
+  }
 
-.container{
-  display: table;
-  margin: auto;
-}
-.profilePic{
-  height: 100px;
-  width: 100px;
-}
-figcaption{
-  border: 2px solid #000;
-  border-radius: 3px;
-  width: 100px;
-  font-size: 19px;
-}
-img{
-  border-radius: 3px;
-}
+  .first{    
+      display: table-cell;
+          font-size: 12px;
+          padding-left:3px;
+          padding-bottom: 10px;
+          width:700px;
+          /*border-right:2px dashed #000000;*/
+          float: left;
+          margin-right: 20px;
+  }
+  .second{
+      display: table-cell;
+          font-size: 12px;
+          padding-left:3px;
+          padding-bottom: 10px;
+          width:300px;
+          /*border-right:2px dashed #000000;*/
+          float: right;
+  }
 
-
-#navigation {
-    float: left;
-    width: 120px;
-}
-
-#navigation2 {
-    float: right;
-    width: 200px;
-}
-
-#content {
+  .container{
+    display: table;
     margin: auto;
+  }
+  .profilePic{
+    height: 100px;
+    width: 100px;
+  }
+  figcaption{
+    border: 2px solid #000;
+    border-radius: 3px;
+    width: 100px;
+    font-size: 19px;
+  }
+  img{
+    border-radius: 3px;
+  }
+
+
+  #navigation {
+      float: left;
+      width: 120px;
+  }
+
+  #navigation2 {
+      float: right;
+      width: 200px;
+  }
+
+  #content {
+      margin: auto;
+  }
+
+  .map{
+    display: table-cell;
+    
+    height:700px;
+    width:800px;
+  }
+  .menu{
+    display: table-cell;
+    position: relative;
+    width: 330px;
+    float: right;
+    padding-left: 20px;
+  }
+    
 }
 
-.map{
-	display: table-cell;
-	
-	height:700px;
-	width:800px;
+@media (max-width: 480px){
+   body{
+    background-image: url("../images/stardust.png");
+  }
+
+  iframe{
+    width: 400px;
+    height: 300px; 
+  }
+  /* First row (div) */
+  .main1{    
+    display: table;
+    /*border: 2px solid #cc2200;*/
+          font-size: 12px;
+          margin:auto;
+  }
+
+  .first{    
+      display: table-cell;
+          font-size: 12px;
+          padding-left:3px;
+          padding-bottom: 10px;
+          /*border-right:2px dashed #000000;*/
+          float: left;
+          margin-right: 20px;
+  }
+  .second{
+      display: table-cell;
+          font-size: 12px;
+          padding-left:3px;
+          padding-bottom: 10px;
+          /*border-right:2px dashed #000000;*/
+          float: right;
+  }
+
 }
-.menu{
-	display: table-cell;
-	position: relative;
-	width: 330px;
-	float: right;
-	padding-left: 20px;
-}
+
+body{
+    background-image: url("../images/stardust.png");
+  }
+  /* First row (div) */
+  .main1{    
+    display: table;
+    /*border: 2px solid #cc2200;*/
+          font-size: 12px;
+          margin:auto;
+  }
+
+  .first{    
+      display: table-cell;
+          font-size: 12px;
+          padding-left:3px;
+          padding-bottom: 10px;
+          width:700px;
+          /*border-right:2px dashed #000000;*/
+          float: left;
+          margin-right: 20px;
+  }
+  .second{
+      display: table-cell;
+          font-size: 12px;
+          padding-left:3px;
+          padding-bottom: 10px;
+          width:300px;
+          /*border-right:2px dashed #000000;*/
+          float: right;
+  }
+
+  .container{
+    display: table;
+    margin: auto;
+  }
+  .profilePic{
+    height: 100px;
+    width: 100px;
+  }
+  figcaption{
+    border: 2px solid #000;
+    border-radius: 3px;
+    width: 100px;
+    font-size: 19px;
+  }
+  img{
+    border-radius: 3px;
+  }
+
+
+  #navigation {
+      float: left;
+      width: 120px;
+  }
+
+  #navigation2 {
+      float: right;
+      width: 200px;
+  }
+
+  #content {
+      margin: auto;
+  }
+
+  .map{
+    display: table-cell;
+    
+    height:700px;
+    width:800px;
+  }
+  .menu{
+    display: table-cell;
+    position: relative;
+    width: 330px;
+    float: right;
+    padding-left: 20px;
+  }
