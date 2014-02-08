@@ -188,3 +188,12 @@ body{
     float: right;
     padding-left: 20px;
   }
+
+#city{
+  font-size: 15px;
+}
+
+.input-group{
+  text-align: center;
+  margin: auto;
+}
