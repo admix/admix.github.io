@@ -34,3 +34,17 @@ img{
 #content {
     margin: auto;
 }
+
+.map{
+	display: table-cell;
+	height:700px;
+	width:800px;
+	margin: auto;
+}
+.menu{
+	display: table-cell;
+	position: relative;
+	width: 300px;
+	float: right;
+	padding-left: 20px;
+}
