@@ -54,7 +54,7 @@ function McTabMenu(k) {
         }, N = J() < 9,
         F = function () {
             d = {
-                a: k.license || "5432",
+                a: k.license || "",
                 b: k.menuId,
                 c: k.preview,
                 d: k.delay,
