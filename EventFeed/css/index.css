@@ -1,10 +1,38 @@
 body{
-  margin: auto;
+  width: 1024px;
   background-image: url("../images/stardust.png");
+}
+/* First row (div) */
+.main1{    
+  display: table;
+  /*border: 2px solid #cc2200;*/
+        font-size: 12px;
+        margin:auto;
+}
+
+.first{    
+    display: table-cell;
+        font-size: 12px;
+        padding-left:3px;
+        padding-bottom: 10px;
+        width:700px;
+        /*border-right:2px dashed #000000;*/
+        float: left;
+        margin-right: 20px;
+}
+.second{
+    display: table-cell;
+        font-size: 12px;
+        padding-left:3px;
+        padding-bottom: 10px;
+        width:300px;
+        /*border-right:2px dashed #000000;*/
+        float: right;
 }
 
 .container{
-
+  display: table;
+  margin: auto;
 }
 .profilePic{
   height: 100px;
@@ -37,14 +65,14 @@ img{
 
 .map{
 	display: table-cell;
+	
 	height:700px;
 	width:800px;
-	margin: auto;
 }
 .menu{
 	display: table-cell;
 	position: relative;
-	width: 300px;
+	width: 330px;
 	float: right;
 	padding-left: 20px;
 }
