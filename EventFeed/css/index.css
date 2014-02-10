@@ -43,6 +43,10 @@
     border-radius: 3px;
     width: 100px;
     font-size: 19px;
+    text-align: center;
+  }
+  button{
+    width: 80px;
   }
   img{
     border-radius: 3px;

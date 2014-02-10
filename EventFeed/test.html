@@ -135,10 +135,15 @@
         </ul>
       </div>
       <div id="content">
+        <button class="btn btn-info">Settings</button>
         <label class="control-label" for="myEvents">My Events</label>
         <input type="checkbox" id="myEvents" name="my-checkbox" class="switch-small" checked data-on="success" data-off="danger">
         <label class="control-label" for="invitedTo">Invited to</label>
-        <input type="checkbox" id="invitedTo" name="my-checkbox" class="switch-small" checked data-on="success" data-off="danger"><br><br>
+        <input type="checkbox" id="invitedTo" name="my-checkbox" class="switch-small" checked data-on="success" data-off="danger">
+        <br><br>
+        <button class="btn btn-danger">Logout</button>
+        
+        
         <label class="control-label" for="showPast">Show past</label>
         <input type="checkbox" id="showPast" name="my-checkbox" class="switch-small" checked data-on="success" data-off="danger">
       </div>
@@ -154,7 +159,7 @@
         <div class="second">
           <ul id="tabmenu">
             <li>
-              Find
+              <a href="?1">Find</a>
               <ul class="find">
                 <li>
                   <div class="input-group">
@@ -164,7 +169,7 @@
                 <li>
                   <div class="input-group">
                     <input type="text" class="form-control" placeholder="Country" id="query" name="query" value="">
-                  </div>
+                  </div> 
                 </li><br>
                 <li>
                   <div class="input-group">
@@ -180,34 +185,78 @@
             </li>
             <li>
               <a href="?2">Create</a>
-              <ul>
+              <ul class="find">
                 <li>
-                  <a href="?21">Horizontal submenu 1</a>
-                  <ul>
-                    <li><a href="?211">Tabbed menu 2-1-1</a></li>
-                    <li><a href="?212">Tabbed menu 2-1-2</a></li>
-                  </ul>
-                </li>
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="City" id="query" name="query" value="">
+                  </div>
+                </li><br>
                 <li>
-                  <a href="?22">Horizontal submenu 2</a>
-                  <ul>
-                    <li><a href="?221">Tabbed menu 2-2-1</a></li>
-                    <li><a href="?222">Tabbed menu 2-2-2</a></li>
-                    <li><a href="?223">Tabbed menu 2-2-3</a></li>
-                    <li><a href="?224">Tabbed menu 2-2-4</a></li>
-                  </ul>
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Country" id="query" name="query" value="">
+                  </div> 
+                </li><br>
+                <li>
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Postal Code" id="query" name="query" value="">
+                  </div>
+                </li><br>
+                <li>
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Filter with ," id="query" name="query" value="">
+                  </div>
                 </li>
-                <li><a href="?23">Horizontal submenu 3</a></li>
               </ul>
             </li>
             <li>
               <a href="?3">Feed</a>
-              <ul>
-                <li><a href="?31">Tab menu 3-1</a></li>
-                <li><a href="?32">Tab menu 3-2</a></li>
+              <ul class="find">
+                <li>
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="City" id="query" name="query" value="">
+                  </div>
+                </li><br>
+                <li>
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Country" id="query" name="query" value="">
+                  </div> 
+                </li><br>
+                <li>
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Postal Code" id="query" name="query" value="">
+                  </div>
+                </li><br>
+                <li>
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Filter with ," id="query" name="query" value="">
+                  </div>
+                </li>
               </ul>
             </li>
-            <li><a href="?4">Profile</a></li>
+            <li><a href="?4">Profile</a>
+              <ul class="find">
+                <li>
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="City" id="query" name="query" value="">
+                  </div>
+                </li><br>
+                <li>
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Country" id="query" name="query" value="">
+                  </div> 
+                </li><br>
+                <li>
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Postal Code" id="query" name="query" value="">
+                  </div>
+                </li><br>
+                <li>
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Filter with ," id="query" name="query" value="">
+                  </div>
+                </li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
