@@ -4,7 +4,7 @@ Event Feeds is a crowdsourced web application that allows users to find worldwid
 
 
 ##Scope
-
+<ul>
 <li>Create events for the general public or a select group of people</li><br>
                   <li>Send invitations to family and friends</li><br>
                   <li>View event descriptions and location, including maps and directions</li><br>
@@ -16,3 +16,4 @@ Event Feeds is a crowdsourced web application that allows users to find worldwid
                   <li>Discover popular and recommended events happening on your location</li><br>
                   <li>View comments and see pictures from previous events</li><br>
                   <br>
+                  </ul>
