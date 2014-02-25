@@ -1,0 +1,214 @@
+body{
+  margin: auto;
+  font-family: serif;
+  font-size:14px;
+  line-height: 1.5;
+/*   color: #555812 */
+}
+
+p{
+  text-align:justify;
+}
+h2{
+  text-align:center;
+}
+            /*----------- Lists ------------*/
+.type_disc{
+  padding-left:10px;
+  list-style-type:disc;
+}
+
+.type_circle{				/*used in nested lists*/
+  list-style-type:circle;
+}
+
+
+.type_decimal{
+  padding-left:20px;
+  list-style-type:decimal;
+}
+
+.type_low_alpha{		/*used in nested lists*/
+  list-style-type:lower-alpha;
+  padding-left: 15px; 
+  list-style-position: inside;
+}
+
+.type_upp_alpha{		/*used in nested lists*/
+  list-style-type:upper-alpha;
+  padding-left: 15px;
+  list-style-position: inside;
+}
+.type_upp_roman{		/*used in nested lists*/
+  list-style-type:upper-roman;
+  padding-left: 15px;
+  list-style-position: inside;
+}
+
+dt{
+  font-weight:bold;
+}
+dd{
+  padding-left:15px;
+}
+
+                    /*----------- Images ------------*/
+.img1{
+  margin-left:100px;
+  margin-top:40px;	
+	
+}
+.img2{
+  width:400px;
+  height:200px;
+}
+.img3{
+  padding-left:40px;
+  padding-top:20px;
+}
+.img4{
+  padding-top:12px;	
+}
+table.imgtbl th{
+  font-size:20px;
+  font-weight:bold;
+}
+table.imgtbl td{
+  border: 2px solid #000000;	
+}
+
+                     /*----------- Texts ------------*/
+.pex1{
+  font-family: sans-serif;
+  letter-spacing: 6px;
+  line-height: 2;	
+}
+.pex2{
+  color: #00cc00;
+  border: 1px solid #000000;
+}
+.pex3{
+  width:400px;
+  text-align: center;
+}
+.pex4{
+  padding-left:50px;
+  font-size:18px;
+}
+.imgtbl{
+  border-collapse:collapse;
+  width:400px;
+  border:4px solid #000000;	
+}
+
+                         /*----------- Tables ------------*/
+
+.ex1{
+  width:400px;
+  border-collapse:collapse;
+  border:4px solid #000000;
+}
+table.ex1 td, th{
+  border:2px solid #000000;
+  text-align:center;
+}
+
+.ex2{
+  border-collapse:separate;
+  border-spacing:20px 20px;
+  width:400px;
+  border:4px solid #000000;
+  /*border-width:4px; */
+}
+table.ex2 td{
+  border:2px solid #000000;
+  text-align:center;
+}
+table.ex2 th{
+  background-color:#00cc00;
+}
+table.ex2 caption{ 
+  text-align: center;
+  padding-bottom:10px;  /* will put a 10px space from the table */
+}
+table.ex2 caption span{  /* will draw border around the text in the caption */
+  border:6px solid;	
+}
+
+.ex3{
+  width:500px;
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+  border:4px solid #000000;
+}
+table.ex3 caption{
+  caption-side:bottom;	
+}
+table.ex3 td{
+  border:2px solid #000000;
+  height:60px;
+}
+.vatc{
+  vertical-align:top;
+  text-align:center;
+}
+.vatl{
+  vertical-align:top;
+  text-align:left;
+}
+.vatr{
+  vertical-align:top;	
+  text-align:right;
+}
+.vabl{
+  vertical-align:bottom;
+  text-align:left;
+}
+.vabr{
+  vertical-align:bottom;
+  text-align:right;
+}  
+.vab{
+  vertical-align:bottom;	
+  text-align:center;
+}
+.ac{
+  text-align:center;
+  vertical-align:middle;
+}
+.al{
+  text-align:left;
+  vertical-align:middle;
+}
+.ar{
+  text-align:right;
+  vertical-align:middle;
+}
+table.ex3 th{
+  border:2px solid #000000;
+  font-weight:bold;
+}
+
+.ex4{
+  width:500px;
+  border:4px solid #000000;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+}
+table.ex4 table{
+  width:80%;
+  border:4px solid #000000;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+}
+table.ex4 td{
+  /*border: solid #000000;*/	
+}
+			/*----------- Honesty ------------*/
+p.honesty{
+  line-height:2;
+  font-size:14px;
+}
