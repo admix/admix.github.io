@@ -1,6 +1,6 @@
 function admixdev() {
 	// body...
-	document.write("<p>&copy;admixdev Inc. 2013</p>");
+	document.write("<p>&copy;Event Feed Inc. 2014</p>");
 }
 
 function startTime()
