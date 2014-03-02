@@ -97,3 +97,18 @@ dd{
 li{
 	margin-left: 40px;
 }
+
+.field { 
+    overflow: auto; /* this "clears" the floated elements */
+    margin-bottom: 10px;
+}
+
+.field label {
+    float: left;
+    width: 200px;
+}
+
+.field .field-subject {
+    float: left;
+    width: 500px;
+}
