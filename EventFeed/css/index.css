@@ -98,7 +98,7 @@ li{
 	margin-left: 40px;
 }
 
-.field { 
+.field {
     overflow: auto; /* this "clears" the floated elements */
     margin-bottom: 10px;
 }
@@ -111,4 +111,12 @@ li{
 .field .field-subject {
     float: left;
     width: 500px;
+}
+.inputs{
+
+}
+.inputs label {
+	display: inline-block;
+  width:65px;
+  text-align: left;
 }
