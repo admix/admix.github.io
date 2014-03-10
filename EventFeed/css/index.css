@@ -120,3 +120,11 @@ li{
   width:65px;
   text-align: left;
 }
+.profile{
+	height: 100px;
+	width:80px;
+}
+.profile_info{
+	font-size: 13px;
+	
+}

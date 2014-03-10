@@ -130,14 +130,33 @@
                 </div>
               </div>
               <div class="tabpage" id="tabpage_3">
-                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                <script>
+                  !function(d,s,id){
+                    var js,fjs=d.getElementsByTagName(s)[0],
+                        p=/^http:/.test(d.location)?'http':'https';
+                    if(!d.getElementById(id)){
+                      js=d.createElement(s);
+                      js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
+                      fjs.parentNode.insertBefore(js,fjs);
+                    }
+                  }(document,"script","twitter-wjs");
+                </script>
                 <p>
                   <a class="twitter-timeline" width="500" height="500" href="https://twitter.com/twitterapi" data-widget-id="432713284714643456">Tweets by @twitterapi</a>
                 </p>
               </div>
               <div class="tabpage" id="tabpage_4">
-                <h3>Profile</h3>
-                <p>Profile information</p>
+                <h4>Profile information</h4>
+                <img class="profile" src="../images/profile.png"/>
+                <p class="profile_info">
+                   - Alexander Snurnikov<br>
+                   - December 8th, 1988<br>
+                   - 70 The Pond Road, Toronto, Canada<br>
+                   - osnurnikov@myseneca.ca<br>
+                   - Geek, space addicted, web developer<br>
+                   <button class="btn btn-warning" href="login.html">Edit Profile</button>
+                   <button class="btn btn-danger" href="login.html">Change Password</button>
+                </p>
               </div>
             </div>
           </div>
