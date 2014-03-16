@@ -11,3 +11,4 @@ Github personal hosting space
 * PizzaProject - sample 'Online Pizza Order' application
 * nodeApp - nodejs application on Heroku -> <a href="http://admix-node.herokuapp.com">App on Heroku</a>
 * testing - testing different new technologies that are coming to the Web world
+* EventFeed - PRJ566-666 project, map based application about event around
