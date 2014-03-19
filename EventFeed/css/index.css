@@ -136,3 +136,12 @@ li{
 .ui-datepicker-year{
 	font-size:12px !important;
 }
+#back_button{
+	color: #ff6600;
+}
+#back_button:hover{
+	color: #0000cc;
+}
+.logo:hover{
+	color: #aa88ff;
+}
