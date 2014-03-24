@@ -145,3 +145,9 @@ li{
 .logo:hover{
 	color: #aa88ff;
 }
+.events li{
+	height: 40px;
+}
+#al{
+	float: right;
+}
