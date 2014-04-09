@@ -112,8 +112,16 @@ li{
     float: left;
     width: 500px;
 }
-.inputs{
-
+#tabpage_6 label{
+	width:150px;
+}
+#tabpage_6 p{
+	text-align: center;
+	text-decoration: underline;
+}
+#tabpage_6 .result{
+	width:365px;
+	height: 200px;
 }
 .inputs label {
 	display: inline-block;
