@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!--INDEX PAGE-->
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -21,21 +21,20 @@
     <!--<link type="text/css" rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-2.3.2.css">-->
   </head>
   <body>
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $(".nav li").removeClass("active");//this will remove the active class from  
-                                         //previously active menu item 
-      $('#home').addClass('active');
-    });
-  </script>
-
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".nav li").removeClass("active");//this will remove the active class from
+                                           //previously active menu item
+        $('#home').addClass('active');
+      });
+    </script>
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
           <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
           </button>
           <a class="brand" href="index.html">admix<span class="logo">dev</span></a>
           <div class="nav-collapse collapse index_p">
@@ -43,59 +42,58 @@
               <li id="home"><a href="index.html">Home</a></li>
               <li><a href="prj566.html">PRJ566</a></li>
               <li><a href="contact.html">Contact</a></li>
-              <li><div class="dropdown">
-                    <button class="btn btn-info dropdown-toggle sr-only" type="button" id="dropdownMenu1" data-toggle="dropdown">
-                      Projects
-                      <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                      <li role="presentation"><a role="menuitem" tabindex="-1" href="../../Games/index.html">Games</a></li>
-                      <li role="presentation"><a role="menuitem" tabindex="-1" href="../../PizzaProject/index.html">Pizza Project</a></li>
-                      <li role="presentation"><a role="menuitem" tabindex="-1" href="cplusplus.html">C++ App</a></li>
-                      <li role="presentation"><a role="menuitem" tabindex="-1" href="mvc4.html">.NET MVC4 App</a></li>
-                      <li role="presentation" class="divider"></li>
-                      <li role="presentation"><a role="menuitem" tabindex="-1" href="../../nodeApp/index.html">Heroku Apps</a></li>
-                      <li role="presentation"><a role="menuitem" tabindex="-1" href="../../testing/index.html">Lighter</a></li>
-                    </ul>
-                  </div>
+              <li>
+                <div class="dropdown">
+                  <button class="btn btn-info dropdown-toggle sr-only" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                  Projects
+                  <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../../Games/index.html">Games</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../../PizzaProject/index.html">Pizza Project</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="cplusplus.html">C++ App</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="mvc4.html">.NET MVC4 App</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../../nodeApp/index.html">Heroku Apps</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../../testing/index.html">Lighter</a></li>
+                  </ul>
+                </div>
               </li>
             </ul>
-          </div><!--/.nav-collapse -->
+          </div>
+          <!--/.nav-collapse -->
         </div>
       </div>
-  </div>
-
-  <!-- We use row-fluid inside containers to achieve a resizable layout. -->  
+    </div>
+    <!-- We use row-fluid inside containers to achieve a resizable layout. -->
     <div class="container">
       <div class="index_p row-fluid">
         <h1>Site is In Construction Mode<span id="txt"></span></h1>
       </div>
-    <div class="row-fluid section1">
-      <div class="span5 offset1 copy copy-right contact_p">
-        <p>
-          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Hello there, my name is Alex (Alexander). I'm really excited on programming and software development in all areas. I started to learn
+      <div class="row-fluid section1">
+        <div class="span5 offset1 copy copy-right contact_p">
+          <p>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Hello there, my name is Alex (Alexander). I'm really excited on programming and software development in all areas. I started to learn
             programming when I was on my 3rd year in the University, where I was studying Management and Marketing. I was completely amused when I got my first <code>HelloWorld.c</code> program work. As maybe a lot of programmers, I started from learning 'C programming', but at the same time I was learning 'Java' using online Stanford Courses. After that I decided that programming would be the thing that I would be doing in my LIFE!!! I really started enjoying it! Every new line of code made me smile and proud ;) I moved to Canada to start learning programming in a high level. Here I am one year after...January 2014 and I have just joined Open Source team from Mozilla. Keep going...<br>
-          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp You can look at my <span>Mozilla</span> Contribution in my Github profile here -> <a href="http://github.com/admix">my Contributions</a>
-        </p>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp You can look at my <span>Mozilla</span> Contribution in my Github profile here -> <a href="http://github.com/admix">my Contributions</a>
+          </p>
+        </div>
+        <div class="span5 asset">
+          <img class="img-polaroid" src="../images/index/me_profile.jpg">
+        </div>
       </div>
-      <div class="span5 asset">
-        <img class="img-polaroid" src="../images/index/me_profile.jpg">
-      </div>
-    </div>
-    
-    <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
-    <!-- http://creativecommons.org/licenses/ -->
-    <div class="footer row-fluid">
+      <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
+      <!-- http://creativecommons.org/licenses/ -->
+      <div class="footer row-fluid">
         <div class="index_p">
-            <div class="span10 offset1 social">
-              <script>admixdev();</script>
-              <!-- Social buttons are not included in default Bootstrap. -->
-              <script type="text/javascript" src="../js/social.js"></script>
-              <script>social();</script>
-            </div>
+          <div class="span10 offset1 social">
+            <script>admixdev();</script>
+            <!-- Social buttons are not included in default Bootstrap. -->
+            <script type="text/javascript" src="../js/social.js"></script>
+            <script>social();</script>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  
-</body>
+  </body>
 </html>

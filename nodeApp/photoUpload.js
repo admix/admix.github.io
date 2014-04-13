@@ -1,6 +1,7 @@
 var formidable = require('formidable'),
     http = require('http'),
-    sys = require('sys');
+    sys = require('sys'),
+    port = 8888;
 
 http.createServer(function(req, res) {
   if (req.url == '/upload' && req.method.toLowerCase() == 'post') {
@@ -24,4 +25,4 @@ http.createServer(function(req, res) {
     '<input type="submit" value="Upload">'+
     '</form>'
   );
-}).listen(8888);
+}).listen(port);

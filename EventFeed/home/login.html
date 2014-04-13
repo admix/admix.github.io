@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
     <link rel="stylesheet" href="../css/grumpy.css" type="text/css" media="screen" />
-    
     <link rel="stylesheet" href="../css/responsive.css" type="text/css" media="screen" />
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
@@ -21,9 +20,9 @@
     <link href="../css/tabs.css" rel="stylesheet" type="text/css">
     <link href="../css/search.css" rel="stylesheet" type="text/css">
     <link type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/ui-darkness/jquery-ui.css" rel="stylesheet">
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
-  <link rel="stylesheet" href="../css/index.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="../css/index.css" type="text/css" media="screen" />
     <!--<link type="text/css" rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-2.3.2.css">-->
   </head>
   <body>
@@ -48,81 +47,81 @@
         </div>
       </div>
     </div>
-    <form><!-- start form -->
-    <!-- We use row-fluid inside containers to achieve a resizable layout. -->  
-    <div class="container"> 
-	    <div class="index_p">
-	      <h1>Create New Profile Page<span id="txt"></span></h1>
-	    </div>
-	    <div class="row-fluid section1"> <!-- start main -->
-	      <div class="span8 copy copy-right contact_p">
-	        <script>
-                  $(function() {
-                    $( "#datepicker" ).datepicker();
-                  });
-                </script>
-                <h3>Create new account</h3>
-                <div class="field">
-				    <label for="user">First Name</label>
-				    <div class="field-subject">
-				        <input type="text" name="user" id="user" maxlength="100" placeholder="Larry" title="Please enter your username." data-h5-errorid="empty-user" tabindex="1" required />
-				    </div>
-				    <label for="l_name">Last Name</label>
-				    <div class="field-subject">
-				        <input type="text" class="form-control" placeholder="Page" id="l_name" name="query" value="">
-				    </div>
-				    <label for="datepicker">Date of Birth</label>
-				    <div class="field-subject">
-				        <input type="text" id="datepicker">
-				    </div>
-				    <label for="address">Address</label>
-				    <div class="field-subject">
-				        <input type="text" class="form-control" placeholder="Toronto, Canada, M3S2A1" id="address" name="query" value="">
-				    </div>
-				    <label for="email">Email</label>
-				    <div class="field-subject">
-				        <input type="text" class="form-control" placeholder="example@gmail.com" id="email" name="query" value="">
-				    </div>
-				    <label for="loc">Default Location</label>
-				    <div class="field-subject">
-				        <input type="text" class="form-control" placeholder="Toronto, Canada" id="loc" name="query" value="">
-				    </div>
-				    <label for="image">Profile image</label>
-				    <div class="field-subject">
-				        <input type="text" class="form-control" id="image" name="query" value="">
-				    </div>
-				    <label for="about">About you</label>
-				    <div class="field-subject">
-				       <textarea id="about" rows="5" cols="30">A little bit about you</textarea>
-				    </div>
-				    <label for="pass">Password</label>
-				    <div class="field-subject">
-				        <input type="text" class="form-control" placeholder="at least 1 digit and 1 capital letter" id="pass" name="query" value="">
-				    </div>
-				    <label for="ver_pass">Repeat Password</label>
-				    <div class="field-subject">
-				        <input type="text" class="form-control" placeholder="the same as above" id="ver_pass" name="query" value="">
-				    </div>    
-				</div>
-				<button class="btn btn-success">Create Profile</button>
-	      </div>
-	      <div class="span4 asset">
-	      
-	      </div>
-	  	</div>
-  	</div>
-      <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
-      <!-- http://creativecommons.org/licenses/ -->
-      <div class="footer row-fluid">
-        <div class="index_p">
-          <div class="span10 offset1 social">
-            <script>admixdev();</script>
-            <!-- Social buttons are not included in default Bootstrap. -->
-            <script type="text/javascript" src="../js/social.js"></script>
-            <script>social();</script>
+    <form>
+    <!-- start form -->
+    <!-- We use row-fluid inside containers to achieve a resizable layout. -->
+    <div class="container">
+      <div class="index_p">
+        <h1>Create New Profile Page<span id="txt"></span></h1>
+      </div>
+      <div class="row-fluid section1">
+        <!-- start main -->
+        <div class="span8 copy copy-right contact_p">
+          <script>
+            $(function() {
+              $( "#datepicker" ).datepicker();
+            });
+          </script>
+          <h3>Create new account</h3>
+          <div class="field">
+            <label for="user">First Name</label>
+            <div class="field-subject">
+              <input type="text" name="user" id="user" maxlength="100" placeholder="Larry" title="Please enter your username." data-h5-errorid="empty-user" tabindex="1" required />
+            </div>
+            <label for="l_name">Last Name</label>
+            <div class="field-subject">
+              <input type="text" class="form-control" placeholder="Page" id="l_name" name="query" value="">
+            </div>
+            <label for="datepicker">Date of Birth</label>
+            <div class="field-subject">
+              <input type="text" id="datepicker">
+            </div>
+            <label for="address">Address</label>
+            <div class="field-subject">
+              <input type="text" class="form-control" placeholder="Toronto, Canada, M3S2A1" id="address" name="query" value="">
+            </div>
+            <label for="email">Email</label>
+            <div class="field-subject">
+              <input type="text" class="form-control" placeholder="example@gmail.com" id="email" name="query" value="">
+            </div>
+            <label for="loc">Default Location</label>
+            <div class="field-subject">
+              <input type="text" class="form-control" placeholder="Toronto, Canada" id="loc" name="query" value="">
+            </div>
+            <label for="image">Profile image</label>
+            <div class="field-subject">
+              <input type="text" class="form-control" id="image" name="query" value="">
+            </div>
+            <label for="about">About you</label>
+            <div class="field-subject">
+              <textarea id="about" rows="5" cols="30">A little bit about you</textarea>
+            </div>
+            <label for="pass">Password</label>
+            <div class="field-subject">
+              <input type="text" class="form-control" placeholder="at least 1 digit and 1 capital letter" id="pass" name="query" value="">
+            </div>
+            <label for="ver_pass">Repeat Password</label>
+            <div class="field-subject">
+              <input type="text" class="form-control" placeholder="the same as above" id="ver_pass" name="query" value="">
+            </div>
           </div>
+          <button class="btn btn-success">Create Profile</button>
+        </div>
+        <div class="span4 asset">
         </div>
       </div>
-    
+    </div>
+    <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
+    <!-- http://creativecommons.org/licenses/ -->
+    <div class="footer row-fluid">
+      <div class="index_p">
+        <div class="span10 offset1 social">
+          <script>admixdev();</script>
+          <!-- Social buttons are not included in default Bootstrap. -->
+          <script type="text/javascript" src="../js/social.js"></script>
+          <script>social();</script>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
