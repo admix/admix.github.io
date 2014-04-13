@@ -9,10 +9,10 @@ body{
 }
 nav{  								/* Layout Part */
     width: 984px;
-    height: 25px; 
+    height: 25px;
     background: #777777;
     border-radius: 20px;
-    border: 2px solid #003399;  
+    border: 2px solid #003399;
  	font-size: 14px;
  	margin: auto;
  	padding-top: 10px;
@@ -55,7 +55,7 @@ nav a:hover{
 p{
 	margin: auto;
 	margin-top: 15px;
-	
+
 }
 span{
 	text-align: center;
@@ -110,7 +110,7 @@ aside ul ul{
 	list-style-image: url("../images/arrow.png");
 	padding-left: 20px;
 	list-style-position: inside;
-}	
+}
 aside ul li{
 	padding-top: 10px;
 	color: #ff3300;
@@ -128,10 +128,10 @@ footer{
 	margin: auto;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	}	
+	}
 hr{
 	margin-top: 20px;
-}					
+}
 
 	/* End of Layout Part */
 
@@ -255,7 +255,7 @@ mark{
 .form{
 	display: table;
 	width: 900px;
-	
+
 	margin: auto;
 	margin-top: 10px;
 	margin-bottom: 60px;
@@ -299,6 +299,7 @@ label{
 	border-bottom: none;
 	border-left: none;
 	padding: 10px;
+	vertical-align: 0 !important;
 }
 .form table{
 	border: 1px solid #ffffff;
@@ -317,31 +318,31 @@ td{
 }
 
 
-.leg{    
+.leg{
 	border: 1px solid #003399;
-    background-color: #ffdd33;
-    border-radius: 5px;
-    color: #000000;
-    font-size: 14px;
-    font-weight: bold;
-    margin-left:1px;
-    padding:2px;
-    text-align: left;
+  background-color: #ffdd33;
+  border-radius: 5px;
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left:1px;
+  padding:2px;
+  text-align: left;
 }
 
 fieldset{
-    border: 1px solid #ffffff;
-    border-radius: 10px;
-    border-style: outset;
-    padding-left:5px;
-    padding-bottom: 0px;
-    margin:5px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  border-style: outset;
+  padding-left:5px;
+  padding-bottom: 0px;
+  margin:5px;
 }
 .name p{   /* Mama'z pizza part */
 	text-align: center;
 }
 .left p{   /* Personal info etc... */
-	
+
 }
 .right p{  /* Choose Toppings field */
 	margin-left: 2px;
@@ -349,7 +350,7 @@ fieldset{
 }
 .small{
 	display: table-cell;
-	width: 150px;
+	width: 190px;
 	margin: auto;
 	border: 2px solid #ffffff;
 	border-radius: 10px;
@@ -360,7 +361,7 @@ fieldset{
 }
 .ce{
 	margin: auto;
-	width: 300px;
+	width: 380px;
 }
 .empty{  /* Part fro JS */
 	display: table-cell;
@@ -372,7 +373,7 @@ fieldset{
 }
 							/* Other Page */
 
-/*span a:visited{ to change link color after it has been opened 
+/*span a:visited{ to change link color after it has been opened
 	color: #000000;
 }
 */

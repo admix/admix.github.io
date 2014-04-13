@@ -15,8 +15,6 @@
     <link rel="stylesheet" href="../myBlog/css/responsive.css" type="text/css" media="screen" />
     <link href='http://fonts.googleapis.com/css?family=Unkempt' rel='stylesheet' type='text/css' />
     <link href='http://fonts.googleapis.com/css?family=Della+Respira' rel='stylesheet' type='text/css'>
-
-    
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
@@ -26,20 +24,20 @@
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
   </head>
   <body>
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $(".nav li").removeClass("active");//this will remove the active class from  
-                                         //previously active menu item 
-      $('#pizza').addClass('active');
-    });
-  </script>  
-  <div class="navbar navbar-inverse navbar-fixed-top">
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".nav li").removeClass("active");//this will remove the active class from
+                                           //previously active menu item
+        $('#pizza').addClass('active');
+      });
+    </script>
+    <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
           <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
           </button>
           <a class="brand" href="../myBlog/home/index.html">admix<span class="logo">dev</span></a>
           <div class="nav-collapse collapse index_p">
@@ -47,220 +45,219 @@
               <li id="home"><a href="../myBlog/home/index.html">Home</a></li>
               <li><a href="../myBlog/home/prj566.html">PRJ566</a></li>
               <li><a href="../myBlog/home/contact.html">Contact</a></li>
-              <li><div class="dropdown">
-                    <button class="btn btn-info dropdown-toggle sr-only" type="button" id="dropdownMenu1" data-toggle="dropdown">
-                      Projects
-                      <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                      <li role="presentation"><a role="menuitem" tabindex="-1" href="../Games/index.html">Games</a></li>
-                      <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html">Pizza Project</a></li>
-                      <li role="presentation"><a role="menuitem" tabindex="-1" href="../myBlog/home/cplusplus.html">C++ App</a></li>
-                      <li role="presentation"><a role="menuitem" tabindex="-1" href="../myBlog/home/mvc4.html">.NET MVC4 App</a></li>
-                      <li role="presentation" class="divider"></li>
-                      <li role="presentation"><a role="menuitem" tabindex="-1" href="../nodeApp/index.html">Heroku Apps</a></li>
-                      <li role="presentation"><a role="menuitem" tabindex="-1" href="../testing/index.html">Heroku Apps</a></li>
-                    </ul>
-                  </div>
+              <li>
+                <div class="dropdown">
+                  <button class="btn btn-info dropdown-toggle sr-only" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                  Projects
+                  <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../Games/index.html">Games</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html">Pizza Project</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../myBlog/home/cplusplus.html">C++ App</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../myBlog/home/mvc4.html">.NET MVC4 App</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../nodeApp/index.html">Heroku Apps</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../testing/index.html">Heroku Apps</a></li>
+                  </ul>
+                </div>
               </li>
             </ul>
-          </div><!--/.nav-collapse -->
+          </div>
+          <!--/.nav-collapse -->
         </div>
       </div>
-  </div>
-
-  <div class="container">
+    </div>
+    <div class="container">
       <div class="index_p row-fluid">
         <h1>Pizza Project<span id="txt"></span></h1>
       </div>
-    <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
-    <!-- http://creativecommons.org/licenses/ -->
-  </div>
-
-
-  <div class="body_d" id="showUp">
-    <!--<div class="lay"><p><span>Pizza service!</span></p></div>-->
-    <div class="main">
-    <form method="post" 
-          name="onlineOrder" 
-          id="onlineOrder" 
+      <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
+      <!-- http://creativecommons.org/licenses/ -->
+    </div>
+    <div class="body_d" id="showUp">
+      <!--<div class="lay"><p><span>Pizza service!</span></p></div>-->
+      <div class="main">
+        <form method="post"
+          name="onlineOrder"
+          id="onlineOrder"
           action="https://zenit.senecac.on.ca/~emile.ohan/cgi-bin/pizza.cgi"
           onsubmit="return validateOrder();">
-      <input  name="hPizzaPrice"      value="0"          type="hidden" /> 
-      <input  name="hToppings"        value="0"          type="hidden" />
-      <input  name="hToppingsCost"    value="0"          type="hidden" />
-      <input  name="hSubTotal"        value="0"          type="hidden" />
-      <input  name="hHst"             value="0"          type="hidden" />
-      <input  name="hFinalTotal"      value="0"          type="hidden" />
-      <input  name="hJsActive"        value="Y"          type="hidden" />
-      <input  name="hLogin"           value="int222_131a24"  type="hidden" /> 
-      <input  name="hName"            value="Snurnikov"   type="hidden" />
-    <div class="form">
-     <div class="name contact_p"> 
-      <span>admix's pizza</span>
-      <hr />
-      <p>416 or 905 <br />
-         222-6262<br/><br/></p>
-      <hr />
-      <table>
-          <tr>
-            <td>Small</td>
-            <td>$11.55</td>
-          </tr>
-          <tr>
-            <td>Medium</td>
-            <td>$15.25</td>
-          </tr>
-          <tr>
-            <td>Large</td>
-            <td>$22.00</td>
-          </tr>
-          <tr>
-            <td>X-Large</td>
-            <td>$25.00</td>
-          </tr>
-          <tr>
-            <td colspan="2">Toppings</td>
-          </tr>
-          <tr>
-            <td>$1.79</td>
-            <td>Each</td>
-          </tr>
-          <tr>
-            <td colspan="2">Plus 13% HST</td>
-          </tr>
-          <tr>
-            <td colspan="2">Free Delivery</td>
-          </tr>
-         </table><br/>
-         <p>
-          <label for="price">Your Price</label><br />
-          <input type="text" id="price" name="price" readonly="readonly" maxlength="8"/> <br />
-         </p>
-     </div>   
-      <div class="left contact_p">
-        <fieldset>
-          <legend class="leg">Personal Information</legend>
-           <p>
-            <label for="surname"><a title="nameC">Name</a></label>
-            <input type="text" name="surname" id="surname" maxlength="15"/>
-           </p>
-           <p>
-            <label for="client"><a title="accC">Account No.</a></label>
-            <input type="text" maxlength="12" name="client" id="client"/>
-           </p>
-           <p>
-            <label for="phone"><a title="phoneC">Phone No.</a></label>
-            <input type="text" maxlength="12" name="phone" id="phone"/>
-           </p>
-           <p>
-            <label for="dob"><a title="birthC">Date of Birth</a></label>
-            <input type="text" maxlength="7" name="dob" id="dob"/>
-           </p>
-         </fieldset>
-         <fieldset>
-         <legend class="leg">Pizza size &amp; Crust</legend>
-           <p class="center">
-            <select name="pizzaSize" id="pizzaSize" size="2"
+          <input  name="hPizzaPrice"      value="0"          type="hidden" />
+          <input  name="hToppings"        value="0"          type="hidden" />
+          <input  name="hToppingsCost"    value="0"          type="hidden" />
+          <input  name="hSubTotal"        value="0"          type="hidden" />
+          <input  name="hHst"             value="0"          type="hidden" />
+          <input  name="hFinalTotal"      value="0"          type="hidden" />
+          <input  name="hJsActive"        value="Y"          type="hidden" />
+          <input  name="hLogin"           value="int222_131a24"  type="hidden" />
+          <input  name="hName"            value="Snurnikov"   type="hidden" />
+          <div class="form">
+            <div class="name contact_p">
+              <span>admix's pizza</span>
+              <hr />
+              <p>416 or 905 <br />
+                222-6262<br/><br/>
+              </p>
+              <hr />
+              <table>
+                <tr>
+                  <td>Small</td>
+                  <td>$11.55</td>
+                </tr>
+                <tr>
+                  <td>Medium</td>
+                  <td>$15.25</td>
+                </tr>
+                <tr>
+                  <td>Large</td>
+                  <td>$22.00</td>
+                </tr>
+                <tr>
+                  <td>X-Large</td>
+                  <td>$25.00</td>
+                </tr>
+                <tr>
+                  <td colspan="2">Toppings</td>
+                </tr>
+                <tr>
+                  <td>$1.79</td>
+                  <td>Each</td>
+                </tr>
+                <tr>
+                  <td colspan="2">Plus 13% HST</td>
+                </tr>
+                <tr>
+                  <td colspan="2">Free Delivery</td>
+                </tr>
+              </table>
+              <br/>
+              <p>
+                <label for="price">Your Price</label><br />
+                <input type="text" id="price" name="price" readonly="readonly" maxlength="8"/> <br />
+              </p>
+            </div>
+            <div class="left contact_p">
+              <fieldset>
+                <legend class="leg">Personal Information</legend>
+                <p>
+                  <label for="surname"><a title="nameC">Name</a></label>
+                  <input type="text" name="surname" id="surname" maxlength="15"/>
+                </p>
+                <p>
+                  <label for="client"><a title="accC">Account No.</a></label>
+                  <input type="text" maxlength="12" name="client" id="client"/>
+                </p>
+                <p>
+                  <label for="phone"><a title="phoneC">Phone No.</a></label>
+                  <input type="text" maxlength="12" name="phone" id="phone"/>
+                </p>
+                <p>
+                  <label for="dob"><a title="birthC">Date of Birth</a></label>
+                  <input type="text" maxlength="7" name="dob" id="dob"/>
+                </p>
+              </fieldset>
+              <fieldset>
+                <legend class="leg">Pizza size &amp; Crust</legend>
+                <p class="center">
+                  <select name="pizzaSize" id="pizzaSize" size="2"
                     onchange="calculatePizzaPrice();">
-              <option value="">Select Pizza Size</option>
-              <option value="Small">Small</option>
-              <option value="Medium">Medium</option>
-              <option value="Large">Large</option>
-              <option value="X-Large">X-Large</option>
-            </select>
-            <select name="pizzaCrust" id="pizzaCrust" size="2">
-              <option value="Regular Crust">Regular Crust</option>
-              <option value="Thin Crust">Thin Crust</option>
-              <option value="Thick Crust">Thick Crust</option>
-              <option value="Whole Wheat Crust">Whole Wheat Crust</option>
-            </select>
-           </p>
-         </fieldset>
-         <fieldset>
-         <legend class="leg">Cheeses</legend>
-           <p class="center">
-            <input type="radio" name="cheese" id="c01" value="Mozzarella" />&nbsp;Mozzarella<br>
-            <input type="radio" name="cheese" id="c02" value="Reduced Fat" />&nbsp;Reduces Fat<br>
-            <input type="radio" name="cheese" id="c03" value="Feta" />&nbsp;Feta
-           </p>
-         </fieldset>
-         <fieldset>
-         <legend class="leg">Sauces</legend>
-           <p class="center">
-            <input type="radio" name="sauce" id="s01" value="Pizza Sauce" />&nbsp;Pizza Sauce<br>
-            <input type="radio" name="sauce" id="s02" value="BBQ Sauce" />&nbsp;BBQ Sauce<br>
-            <input type="radio" name="sauce" id="s03" value="Garlic Sauce" />&nbsp;Garlic Sauce
-           </p>
-         </fieldset>
-         <fieldset>
-         <legend class="leg">Special Instructions</legend>
-           <p class="center">
-            <textarea name="note" id="note" cols="40" rows="4"></textarea>
-           </p>
-         </fieldset>
-         <p>
-           <input type="submit" value="PLACE YOUR ORDER" />
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-           <input type="reset" value="START OVER" />
-         </p>
+                    <option value="">Select Pizza Size</option>
+                    <option value="Small">Small</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Large">Large</option>
+                    <option value="X-Large">X-Large</option>
+                  </select>
+                  <select name="pizzaCrust" id="pizzaCrust" size="2">
+                    <option value="Regular Crust">Regular Crust</option>
+                    <option value="Thin Crust">Thin Crust</option>
+                    <option value="Thick Crust">Thick Crust</option>
+                    <option value="Whole Wheat Crust">Whole Wheat Crust</option>
+                  </select>
+                </p>
+              </fieldset>
+              <fieldset>
+                <legend class="leg">Cheeses</legend>
+                <p class="center">
+                  <input type="radio" name="cheese" id="c01" value="Mozzarella" />&nbsp;Mozzarella<br>
+                  <input type="radio" name="cheese" id="c02" value="Reduced Fat" />&nbsp;Reduces Fat<br>
+                  <input type="radio" name="cheese" id="c03" value="Feta" />&nbsp;Feta
+                </p>
+              </fieldset>
+              <fieldset>
+                <legend class="leg">Sauces</legend>
+                <p class="center">
+                  <input type="radio" name="sauce" id="s01" value="Pizza Sauce" />&nbsp;Pizza Sauce<br>
+                  <input type="radio" name="sauce" id="s02" value="BBQ Sauce" />&nbsp;BBQ Sauce<br>
+                  <input type="radio" name="sauce" id="s03" value="Garlic Sauce" />&nbsp;Garlic Sauce
+                </p>
+              </fieldset>
+              <fieldset>
+                <legend class="leg">Special Instructions</legend>
+                <p class="center">
+                  <textarea name="note" id="note" cols="40" rows="4"></textarea>
+                </p>
+              </fieldset>
+              <p>
+                <input type="submit" value="PLACE YOUR ORDER" />
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <input type="reset" value="START OVER" />
+              </p>
+            </div>
+            <div class="right contact_p">
+              <fieldset>
+                <legend class="leg">Choose Toppings (2 free) - $1.79 Each</legend>
+                <div class="ce">
+                  <div class="small">
+                    <p>
+                      <input type="checkbox" name="toppings" id="t01" value="Anchovies"
+                        onclick="calculatePizzaPrice();" />Anchovies<br/>
+                      <input type="checkbox" name="toppings" id="t02" value="Bacon"
+                        onclick="calculatePizzaPrice();" />Bacon<br/>
+                      <input type="checkbox" name="toppings" id="t03" value="Ham"
+                        onclick="calculatePizzaPrice();" />Ham<br/>
+                      <input type="checkbox" name="toppings" id="t04" value="Pepperoni"
+                        onclick="calculatePizzaPrice();" />Pepperoni<br/>
+                      <input type="checkbox" name="toppings" id="t05" value="Salami"
+                        onclick="calculatePizzaPrice();" />Salami<br/>
+                      <input type="checkbox" name="toppings" id="t06" value="Sausage"
+                        onclick="calculatePizzaPrice();" />Sausage<br/>
+                    </p>
+                  </div>
+                  <div class="small">
+                    <p>
+                      <input type="checkbox" name="toppings" id="t07" value="Broccoli"
+                        onclick="calculatePizzaPrice();" />Broccoli<br/>
+                      <input type="checkbox" name="toppings" id="t08" value="Green Olives"
+                        onclick="calculatePizzaPrice();" />Green Olives<br/>
+                      <input type="checkbox" name="toppings" id="t09" value="Green Peppers"
+                        onclick="calculatePizzaPrice();" />Green Peppers<br/>
+                      <input type="checkbox" name="toppings" id="t10" value="Mushrooms"
+                        onclick="calculatePizzaPrice();" />Mushrooms<br/>
+                      <input type="checkbox" name="toppings" id="t11" value="Red Onions"
+                        onclick="calculatePizzaPrice();" />Red Onions<br/>
+                      <input type="checkbox" name="toppings" id="t12" value="Roasted Garlic"
+                        onclick="calculatePizzaPrice();" />Roasted Garlic<br/>
+                    </p>
+                  </div>
+                </div>
+              </fieldset>
+              <div class="empty" id="errors">
+              </div>
+            </div>
+          </div>
+        </form>
       </div>
-      
-      <div class="right contact_p">
-        <fieldset>
-          <legend class="leg">Choose Toppings (2 free) - $1.79 Each</legend>
-          <div class="ce">
-           <div class="small">
-            <p>
-             <input type="checkbox" name="toppings" id="t01" value="Anchovies" 
-                    onclick="calculatePizzaPrice();" />Anchovies<br/>
-             <input type="checkbox" name="toppings" id="t02" value="Bacon" 
-                    onclick="calculatePizzaPrice();" />Bacon<br/>
-             <input type="checkbox" name="toppings" id="t03" value="Ham" 
-                    onclick="calculatePizzaPrice();" />Ham<br/>
-             <input type="checkbox" name="toppings" id="t04" value="Pepperoni" 
-                    onclick="calculatePizzaPrice();" />Pepperoni<br/>
-             <input type="checkbox" name="toppings" id="t05" value="Salami" 
-                    onclick="calculatePizzaPrice();" />Salami<br/>
-             <input type="checkbox" name="toppings" id="t06" value="Sausage" 
-                    onclick="calculatePizzaPrice();" />Sausage<br/>
-            </p> 
-           </div>
-           <div class="small">
-            <p> 
-             <input type="checkbox" name="toppings" id="t07" value="Broccoli"   
-                    onclick="calculatePizzaPrice();" />Broccoli<br/>
-             <input type="checkbox" name="toppings" id="t08" value="Green Olives"   
-                    onclick="calculatePizzaPrice();" />Green Olives<br/>
-             <input type="checkbox" name="toppings" id="t09" value="Green Peppers"   
-                    onclick="calculatePizzaPrice();" />Green Peppers<br/>
-             <input type="checkbox" name="toppings" id="t10" value="Mushrooms"   
-                    onclick="calculatePizzaPrice();" />Mushrooms<br/>
-             <input type="checkbox" name="toppings" id="t11" value="Red Onions"   
-                    onclick="calculatePizzaPrice();" />Red Onions<br/>
-             <input type="checkbox" name="toppings" id="t12" value="Roasted Garlic"   
-                    onclick="calculatePizzaPrice();" />Roasted Garlic<br/>
-            </p>
-           </div>
-           </div>
-        </fieldset>
-        <div class="empty" id="errors"> 
-      </div>
-      </div>
-    </div>
-  </form>
-  </div>
-     <!--<hr/>-->
     </div>
     </div>
     <div class="footer row-fluid">
-        <div class="index_p">
-            <div class="span10 offset1 social">
-              <script>admixdev();</script>
-              <!-- Social buttons are not included in default Bootstrap. -->
-              <script type="text/javascript" src="../myBlog/js/social.js"></script>
-              <script>social();</script>
-            </div>
+      <div class="index_p">
+        <div class="span10 offset1 social">
+          <script>admixdev();</script>
+          <!-- Social buttons are not included in default Bootstrap. -->
+          <script type="text/javascript" src="../myBlog/js/social.js"></script>
+          <script>social();</script>
+        </div>
       </div>
     </div>
   </body>
