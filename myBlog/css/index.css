@@ -17,6 +17,12 @@ ul{
 	margin: auto;
 	padding:10px;
 }
+.first{
+	font-size: 20px;
+	font-weight: bold;
+	color: #dd6600;
+	letter-spacing: 2px;
+}
 .left{
 	display: table-cell;
 	width: 240px;
