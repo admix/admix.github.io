@@ -4,7 +4,7 @@ body{
 }
 span{
 	font-size: 25px;
-	color: #ccccff;
+	color: #009966;
 	text-align: left;
 
 }
@@ -111,5 +111,12 @@ li{
 }
 .gm-style label {
 	width: auto;
-	display: inline; 
+	display: inline;
+}
+/* Specific rules for company name */
+.name {
+	font-size: 20px;
+	font-weight: bold;
+	font-decoration: underline;
+	color: #ccccff;
 }
