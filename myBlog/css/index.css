@@ -120,3 +120,8 @@ li{
 	font-decoration: underline;
 	color: #ccccff;
 }
+.info {
+	border:2px solid;
+  border-radius:25px;
+	padding: 0px 20px;
+}
