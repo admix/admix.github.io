@@ -125,6 +125,12 @@ li{
   border-radius:25px;
 	padding: 0px 20px;
 }
+.res {
+	margin: 0;
+	border:2px solid;
+	border-radius:25px;
+	padding: 0px 20px;
+}
 .small {
 	font-size: 11px;
 	color: #ccccff;
