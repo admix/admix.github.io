@@ -125,11 +125,22 @@ li{
   border-radius:25px;
 	padding: 0px 20px;
 }
+h3 {
+	text-align: center;
+	padding-top: -50px;
+}
 .res {
-	margin: 0;
+	font-size: 15px;
 	border:2px solid;
 	border-radius:25px;
-	padding: 0px 20px;
+}
+.res ul {
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+.res .first {
+	font-size: 15px;
 }
 .small {
 	font-size: 11px;
